@@ -1,0 +1,16 @@
+/app/node_modules
+/app/npm-debug.log
+/app/.node_history
+/app/*.cache
+/app/build
+/app/.strapi-updater.json
+Dockerfile
+.dockerignore
+.git
+.gitignore
+/app/.gitignore
+dist
+*.BACKUP
+.env
+/app/.env
+README.md
