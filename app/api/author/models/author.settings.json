@@ -47,8 +47,8 @@
       "type": "string"
     },
     "posts": {
-      "collection": "post",
-      "via": "author"
+      "via": "author",
+      "collection": "post"
     }
   }
 }
