@@ -15,7 +15,7 @@ RUN yarn install
 
 COPY --chown=1000:1000 app/ ./
 
-RUN ls -la
+RUN yarn build
 
 EXPOSE 1337
 
