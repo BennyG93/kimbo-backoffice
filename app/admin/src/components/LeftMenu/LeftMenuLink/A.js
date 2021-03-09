@@ -32,7 +32,7 @@ const A = styled.a`
 
   &.linkActive {
     color: white !important;
-    border-left: 0.3rem solid ${props => props.theme.main.colors.strapi.blue};
+    border-left: 0.3rem solid ${props => props.theme.main.colors.kimbo['kimbo-pink']};
   }
 `;
 
