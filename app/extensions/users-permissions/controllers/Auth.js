@@ -391,8 +391,6 @@ module.exports = {
 
     // Override username with dummy random string for every new user. 
     ctx.request.body.username = uuidv4();
-    console.log("print user!!")
-    console.log(ctx.request.body)
 
     const params = {
       ..._.omit(ctx.request.body, ['confirmed', 'confirmationToken', 'resetPasswordToken']),
