@@ -69,7 +69,7 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:latest -f platform/cicd/Dockerfile .
         docker tag $ECR_REGISTRY/$ECR_REPOSITORY:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         
-        cho Pushing the Docker images...
+        echo Pushing the Docker images...
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
