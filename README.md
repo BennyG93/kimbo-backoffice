@@ -8,7 +8,7 @@ aws ecr get-login --no-include-email
 docker login -u AWS -p <password> https://522796919834.dkr.ecr.eu-west-1.amazonaws.com
 
 ## Build and push
-docker build -t kimbo-backoffice:latest -f platform/docker/Dockerfile .
+docker build -t kimbo-backoffice:latest -f platform/cicd/Dockerfile .
 docker tag kimbo-backoffice:latest 522796919834.dkr.ecr.eu-west-1.amazonaws.com/kimbo-backoffice:latest
 docker push 522796919834.dkr.ecr.eu-west-1.amazonaws.com/kimbo-backoffice:latest
 ```
