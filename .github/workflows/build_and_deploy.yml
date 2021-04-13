@@ -27,10 +27,16 @@ on:
   # Trigger the workflow on push or pull request for the main branch
   push:
     branches:
-      - master
+    - master
+    paths:
+    - 'app/**'
+    - 'platform/cicd/**'
   pull_request:
     branches:
-      - master
+    - master
+    paths:
+    - 'app/**'
+    - 'platform/cicd/**'
 
 name: Deploy to Amazon ECS
 
