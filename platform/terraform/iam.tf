@@ -46,7 +46,7 @@ resource "aws_iam_policy_attachment" "bucket_policy" {
 
 resource "aws_iam_policy_attachment" "ECSTaskExecution" {
   name       = "ECSTaskExecution"
-  roles      = [aws_iam_role.application_role.name]
+  roles      = [aws_iam_role.application_role.name, "ecsTaskExecutionRole"]
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 

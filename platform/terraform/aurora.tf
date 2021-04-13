@@ -10,7 +10,7 @@ module "aurora" {
 
   name                  = "${var.app_name}-strapi-database"
   engine                = "aurora-mysql"
-  engine_version        = "5.7.12"
+  engine_version        = "5.7.mysql_aurora.2.07.2"
   instance_type         = "db.t3.small"
 
   vpc_id                = var.vpc.id
