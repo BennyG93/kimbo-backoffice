@@ -1,13 +1,13 @@
-module "ecs" {
-  source  = "terraform-aws-modules/ecs/aws"
-  version = "2.8.0"
+# module "ecs" {
+#   source  = "terraform-aws-modules/ecs/aws"
+#   version = "2.8.0"
 
-  create_ecs = true
+#   create_ecs = true
   
-  name               = var.app_name
-  container_insights = true
-  capacity_providers = ["FARGATE"]
-}
+#   name               = var.app_name
+#   container_insights = true
+#   capacity_providers = ["FARGATE"]
+# }
 
 ## The ECS task definition and service are managed outside of TF
 ## because they change often with CICD implimentation
